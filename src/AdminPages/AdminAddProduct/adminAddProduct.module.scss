@@ -1,0 +1,113 @@
+@import "../../variable.module.scss";
+
+.addAdminProductContainer {
+  display: flex;
+  //   align-items: center;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  .addProject {
+    padding: 32px;
+    border: 1px solid $borderColor;
+    margin-top: 40px;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    .inputContainer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      .imgInput {
+        width: 50%;
+      }
+    }
+    .projectDescription {
+      margin: 24px 0;
+      padding: 8px;
+    }
+    .projectImg {
+      margin-top: 8px;
+      display: flex;
+      .imgContainer {
+        margin-right: 12px;
+        .editImageShow {
+          height: 80px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .removeImage {
+          height: 18px;
+          position: relative;
+          margin-left: -40px;
+          cursor: pointer;
+          margin-bottom: 54px;
+        }
+      }
+    }
+    .addProjectBtn {
+      padding: 24px;
+      background-color: $learnMoreColor;
+      color: $whiteColor;
+      border: none;
+      border-radius: 8px;
+      font-size: 24px;
+    }
+  }
+  .projectList {
+    padding: 32px;
+    margin-top: 40px;
+    border: 1px solid $borderColor;
+    .projectListUl {
+      margin-top: 32px;
+      padding-left: 0 !important;
+      list-style: none;
+      .projectListItem {
+        width: 320px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $borderColor;
+        margin-bottom: 4px;
+        .headingImageContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .listImg {
+            margin-left: 8px;
+            height: 80px;
+          }
+          .projectTitle {
+          }
+        }
+        .actionBtn {
+          .actionIcon {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.marginTop {
+  margin-top: 16px;
+}
+
+.error {
+  color: $redColor;
+  margin-top: 8px;
+  font-size: 16px;
+}
+.mainIMageContainer {
+  margin-bottom: 16px;
+  .mainImage {
+    height: 80px;
+  }
+}
+
+.addProjextInput {
+  border-bottom: 1px solid $borderColor;
+  color: $blackColor;
+}

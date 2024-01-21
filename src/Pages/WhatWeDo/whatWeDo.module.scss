@@ -1,0 +1,514 @@
+@import "../../variable.module.scss";
+
+.whatWeDoContainer {
+  .twoColumnContainer {
+    margin: 32px 88px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 960px;
+    @include mobile {
+      margin: 0;
+      flex-direction: column;
+      padding: 0 40px;
+      height: auto;
+    }
+    .containerOne {
+      width: 55%;
+      @include mobile {
+        width: 100%;
+      }
+      .containerOneCard {
+        .mobileCardHeading {
+          width: 100%;
+          text-align: center;
+          margin: 32px 0;
+          color: $blackColor;
+          font-style: normal;
+          font-weight: 700;
+          .heading1 {
+            line-height: 120%; /* 30px */
+            font-size: 25px;
+          }
+          .heading2 {
+            line-height: 120%; /* 30px */
+            font-size: 32px;
+            letter-spacing: 0.96px;
+          }
+          .heading3 {
+            font-size: 36px;
+            line-height: 120%; /* 30px */
+            letter-spacing: 2.88px;
+          }
+        }
+        .cardHeading {
+          box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+          height: 360px;
+          width: 460px;
+          padding-left: 15%;
+          color: $blackColor;
+          font-size: 90px;
+          font-weight: 700;
+          line-height: 120%; /* 108px */
+          margin-bottom: 80px;
+        }
+        .containerOneImg {
+          width: 100%;
+          height: 509px;
+          @include mobile {
+            height: 188px;
+          }
+        }
+      }
+    }
+    .containerTwo {
+      width: 42%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @include mobile {
+        width: 100%;
+      }
+      .containerTwoimg {
+        width: 100%;
+        height: 544px;
+        @include mobile {
+          margin-top: 24px;
+          height: 140px;
+        }
+      }
+      .verticalDevider {
+        width: 1px;
+        height: 226px;
+        background-color: $borderColor;
+        margin: 88px 0 64px 0;
+        @include mobile {
+          height: 44px;
+          width: 1px;
+          margin: 14px 0;
+        }
+      }
+    }
+  }
+  .greyContainer {
+    background-color: $greyContainerColor;
+    padding: 64px 0;
+    .imageTextContainer {
+      display: flex;
+      flex-direction: column;
+      margin: 0 144px;
+      @include smallLaptop {
+        margin: 0 80px;
+      }
+      @include mobile {
+        margin: 0;
+        padding: 0 40px;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .textIconContainer {
+        position: relative;
+        top: 130px;
+        left: 320px;
+        width: 980px;
+        display: flex;
+        align-items: center;
+        @include smallLaptop {
+          width: 780px;
+        }
+        @include mobile {
+          position: static;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 40px;
+        }
+        .containerHeading {
+          color: $whiteColor;
+          font-size: 90px;
+          line-height: 120%;
+          z-index: 99;
+          @include smallLaptop {
+            font-size: 72px;
+          }
+          @include mobile {
+            font-size: 24px;
+          }
+        }
+      }
+      .imgContainer {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+          flex-direction: column;
+        }
+        .alignContainer {
+          display: flex;
+          align-items: end;
+          margin-bottom: 64px;
+          justify-content: center;
+          @include smallLaptop {
+            width: 504px;
+          }
+          @include mobile {
+            width: 100%;
+            margin-top: 40px;
+          }
+          .firstTextContainer {
+            margin-left: 144px;
+            @include smallLaptop {
+              margin-left: 40px;
+            }
+            @include mobile {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .imageTextContainerTwo {
+      margin-right: 140px;
+      margin-left: 196px;
+      display: flex;
+      @include mobile {
+        margin: 0;
+        flex-direction: column;
+        padding: 0 40px;
+      }
+      .firstColumnContainer {
+        width: 50%;
+        @include mobile {
+          width: 100%;
+        }
+        .topMarginTextContainer {
+          margin-top: 40%;
+          width: 447px;
+          @include smallLaptop {
+            margin-right: 40px;
+          }
+          @include mobile {
+            margin-top: 40px;
+            margin-right: 0;
+            width: 100%;
+          }
+        }
+
+        .headingImgContainer {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .verticalLine {
+            width: 6px;
+            height: 340px;
+            background: $borderColor2;
+            @include mobile {
+              height: 32px;
+              width: 1px;
+            }
+          }
+          .containerHeadingTwo {
+            color: $whiteColor;
+            font-size: 92px;
+            line-height: 120%;
+            width: 1043px;
+            position: absolute;
+            z-index: 99;
+            margin-top: 22%;
+            margin-left: 24%;
+            @include smallLaptop {
+              font-size: 72px;
+              margin-top: 28%;
+            }
+            @include mobile {
+              margin-top: 16px;
+              font-size: 24px;
+              position: static;
+              width: 100%;
+              text-align: center;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+      .secondColumnContainer {
+        // width: 50%;
+        .imgMarginTop {
+          margin-top: 12%;
+        }
+      }
+    }
+    .imageTextContainerThree {
+      margin-right: 190px;
+      margin-left: 140px;
+      display: flex;
+      @include mobile {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        padding: 0 40px;
+        margin-bottom: 160px;
+      }
+      .firstColumnContainer {
+        .imgMarginTop {
+          margin-top: 32%;
+          @include mobile {
+            margin-top: 28px;
+          }
+        }
+      }
+      .secondColumnContainer {
+        .headingImgContainer {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          @include smallLaptop {
+            width: 504px;
+          }
+          @include mobile {
+            width: 100%;
+          }
+          .verticalLine {
+            width: 6px;
+            height: 340px;
+            background: $borderColor2;
+            @include mobile {
+              height: 36px;
+              width: 1px;
+            }
+          }
+          .containerHeadingThree {
+            color: $whiteColor;
+            font-size: 92px;
+            line-height: 120%;
+            width: 829px;
+            position: absolute;
+            z-index: 99;
+            margin-top: 8%;
+            margin-left: -16%;
+            @include smallLaptop {
+              font-size: 72px;
+              width: 780px;
+            }
+            @include mobile {
+              font-size: 24px;
+              position: static;
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+        .thirdTextContainer {
+        }
+        .topMarginTextContainer {
+          //   margin-top: 40%;
+          margin-left: 20%;
+          width: 447px;
+          margin-top: 48%;
+          @include smallLaptop {
+            margin-left: 20%;
+          }
+          @include mobile {
+            margin-top: 40px;
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .imageTextContainerFour {
+      display: flex;
+      margin-left: 210px;
+      margin-right: 140px;
+    }
+  }
+}
+.containerHeadingFour {
+  color: $whiteColor;
+  font-size: 92px;
+  line-height: 120%;
+  width: 1330px;
+  position: absolute;
+  z-index: 99;
+  margin-top: 22%;
+  margin-left: 42%;
+  @include smallLaptop {
+    margin-top: 28%;
+    font-size: 72px;
+    width: 1180px;
+  }
+  @include mobile {
+    font-size: 22px;
+    margin-top: 0;
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 28px;
+  }
+}
+
+.contatinerTextOne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subTextContainer {
+  .imgTextChild {
+    color: $whiteColor;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 120%; /* 31.092px */
+    margin-bottom: 24px;
+    @include smallLaptop {
+      font-size: 18px;
+    }
+    .highlightText {
+      font-size: 20px;
+      font-style: italic;
+      margin-right: 8px;
+      font-weight: 700;
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.redDot {
+  margin-left: 8px;
+  margin-right: 24px;
+
+  @include mobile {
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+}
+.imgShadeContainer {
+  width: 640px;
+  height: 744px;
+  @include smallLaptop {
+    width: 626px;
+  }
+  @include mobile {
+    width: 100%;
+    height: 224px;
+  }
+  .greyImage {
+    width: 746px;
+    height: 744px;
+    @include mobile {
+      height: 220px;
+      width: 100%;
+    }
+  }
+  .shade {
+    width: 746px;
+    height: 748px;
+    position: relative;
+    top: -750px;
+    background: rgba(0, 0, 0, 0.3);
+    @include mobile {
+      width: 100%;
+      top: -222px;
+      height: 220px;
+    }
+  }
+}
+
+.mainGeadingZIndex {
+  z-index: 99;
+}
+.headingIcon {
+  position: absolute;
+  color: $redColor;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  @include mobile {
+    margin-left: 4px;
+    font-size: 12px;
+  }
+}
+
+.headingImgContainerMobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .verticalLine {
+    width: 6px;
+    height: 340px;
+    background: $borderColor2;
+    @include mobile {
+      width: 1px;
+      height: 32px;
+    }
+  }
+  .containerHeadingTwo {
+    color: $whiteColor;
+    font-size: 92px;
+    line-height: 120%;
+    width: 1043px;
+    position: absolute;
+    z-index: 99;
+    margin-top: 22%;
+    margin-left: 24%;
+    @include smallLaptop {
+      font-size: 72px;
+      margin-top: 28%;
+    }
+    @include mobile {
+      margin-top: 16px;
+      font-size: 24px;
+      position: static;
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+}
+
+.mobileImageTextContainerTwo {
+  width: auto;
+  @include mobile {
+    flex-direction: column-reverse !important;
+  }
+}
+// .mobilePaddingContainerTwo {
+//   @include mobile {
+//     padding-top: 48px !important;
+//   }
+// }
+
+.additionalContainerFourClass {
+  .mobileVerticalContainerFour {
+    @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @include mobile {
+    // flex-direction: column-reverse !important;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .verticalLine {
+    width: 6px;
+    height: 340px;
+    background: $borderColor2;
+    @include mobile {
+      width: 1px;
+      height: 32px;
+    }
+  }
+}
+
+.textRight {
+  text-align: right;
+}

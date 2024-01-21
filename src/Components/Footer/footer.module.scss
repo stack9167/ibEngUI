@@ -1,0 +1,113 @@
+@import "../../variable.module.scss";
+
+.footerContainer {
+  background-color: $footerbackgroundColor;
+  padding: 32px 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include smallLaptop {
+    padding: 32px 48px;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+  .containerOne {
+    .contactListItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      .borderIcon {
+        padding: 9px;
+        border: 2px solid $whiteColor;
+        border-radius: 50%;
+        width: 26px;
+        height: 24px;
+      }
+      .footerIcon {
+        margin-right: 32px;
+      }
+      .footerIconLabel {
+        color: $whiteColor;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 120%; /* 19.2px */
+      }
+    }
+  }
+  .containerTwo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .formInput {
+      margin-bottom: 24px;
+      width: 480px;
+      text-align: center;
+      @include smallLaptop {
+        width: 440px;
+      }
+      @include mobile {
+        width: 292px;
+      }
+    }
+    .footerBtn {
+      margin-top: 12px;
+      width: 480px;
+      height: 55.26px;
+      border-radius: 10px;
+      background: $learnMoreColor;
+      border: none;
+      color: $whiteColor;
+      font-size: 20px;
+      line-height: 120%; /* 24px */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include smallLaptop {
+        width: 440px;
+      }
+      @include mobile {
+        width: 295px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .containerThree {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .containerThreeLabel {
+      text-align: center;
+      color: $whiteColor;
+    }
+    .iconContainer {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .mediaIcon {
+        margin-right: 24px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.btnCursorDisable {
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: red;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.phoneLink {
+  cursor: pointer;
+  text-decoration: none;
+}

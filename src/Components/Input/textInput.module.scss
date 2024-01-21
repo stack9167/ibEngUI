@@ -1,0 +1,28 @@
+@import "../../variable.module.scss";
+
+.errorText {
+  color: red;
+  text-align: center;
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+
+.input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $whiteColor;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  padding: 8px;
+}
+.flexBox {
+  display: flex;
+  margin-left: 32px;
+  align-items: center;
+}

@@ -1,0 +1,419 @@
+@import "../../variable.module.scss";
+
+.homeContainer {
+  .heroContainer {
+    .firstHeroImg {
+    }
+    .heroImageContainer {
+      &:last-child {
+        height: 880px;
+        @include mobile {
+          height: 740px;
+        }
+      }
+      .linearHighLight {
+        // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+      }
+      .detialsContainer {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        // position: relative;
+        padding: 0 56px 40px 56px;
+        @include mobile {
+          padding: 0 24px 40px 24px;
+        }
+
+        .imageTextContainer {
+          width: 92%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .mainHeading {
+            color: $headerColor;
+            font-size: 80px;
+            font-weight: 800;
+            letter-spacing: 6.8px;
+            margin-bottom: 18px;
+            text-align: center;
+            @include mobile {
+              font-size: 26px;
+            }
+          }
+          .imageDescription {
+            color: $whiteColor;
+            font-size: 20px;
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 12px;
+            line-height: 120%; /* 31.2px */
+            transition-delay: 500ms;
+            @include mobile {
+              font-size: 15px;
+            }
+            .highLight {
+              font-size: 26px;
+              font-weight: 700;
+              font-style: italic;
+              @include mobile {
+                font-size: 15px;
+              }
+            }
+            .moreTextSubText {
+              margin-bottom: 24px;
+              &:first-child {
+                margin-top: 16px;
+              }
+            }
+          }
+          .showMore {
+            color: $whiteColor;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 2.55px;
+            cursor: pointer;
+            @include mobile {
+              display: none;
+            }
+          }
+          .underline {
+            margin-top: 8px;
+            height: 2px;
+            background-color: $whiteColor;
+            width: 170px;
+            @include mobile {
+              display: none;
+            }
+          }
+        }
+        .viewIcon {
+          height: 114px;
+          cursor: pointer;
+          @include mobile {
+            width: 39px;
+            height: 39px;
+          }
+        }
+      }
+      .detialsContainerService {
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.82) 0%,
+          rgba(137, 134, 134, 0) 100%
+        );
+        margin-bottom: -267px;
+        bottom: 615px;
+        @include mobile {
+          bottom: 3px;
+          color: $blackColor;
+          background: none;
+        }
+        .serviceHeading {
+          text-align: center;
+          color: $whiteColor;
+          margin-bottom: 32px;
+          @include mobile {
+            color: $blackColor;
+          }
+          .primaryHeading {
+            font-size: 82px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            @include mobile {
+              font-size: 32px;
+            }
+          }
+          .secondaryHeading {
+            font-size: 60px;
+            @include mobile {
+              font-size: 26px;
+            }
+          }
+        }
+        .serviceContainer {
+          width: 85%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-top: 2px solid $whiteColor;
+          padding-top: 64px;
+          @include mobile {
+            border-top: 2px solid $blackColor;
+            flex-direction: column;
+          }
+          .serviceCard {
+            border-radius: 24px;
+            background: $whiteColor;
+            box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+            width: 296px;
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $blackColor;
+            @include smallLaptop {
+              width: 264px;
+            }
+            @include mobile {
+              width: 340px;
+              height: 83px;
+              flex-direction: row;
+              margin-bottom: 32px;
+            }
+            cursor: pointer;
+            &:hover {
+              background-color: $learnMoreColor;
+              color: $whiteColor;
+            }
+            .serviceIcon {
+              margin-top: 10%;
+              @include mobile {
+                width: 54.327px;
+                height: 54.327px;
+                margin-top: 0;
+                padding: 0 24px;
+              }
+            }
+            .cardText {
+              max-width: 280px;
+              text-align: center;
+              text-transform: uppercase;
+              margin-top: 15%;
+              font-size: 20px;
+              font-weight: 900;
+              line-height: 120%; /* 24px */
+              height: 31%;
+              @include mobile {
+                margin-top: 0;
+                font-size: 18px;
+                text-align: left;
+              }
+            }
+            .cardLearMoreContainer {
+              display: flex;
+              cursor: pointer;
+              align-items: center;
+              justify-content: center;
+              height: 82px;
+              border-radius: 0px 0px 24px 24px;
+              background: $learnMoreColor;
+              width: 100%;
+              @include mobile {
+                display: none;
+              }
+              .cardLearMore {
+                color: $whiteColor;
+                font-size: 22px;
+                line-height: 120%; /* 26.4px */
+              }
+            }
+          }
+          .serviceCardMobile {
+          }
+        }
+      }
+    }
+  }
+  .sliderContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.brandImg {
+  height: 120px !important;
+  max-width: 292px !important;
+  margin-right: 64px;
+}
+
+.sliderContainer {
+  margin-top: 80px !important;
+}
+
+.heroImg {
+  width: 100%;
+  margin-bottom: 26px;
+}
+.defaultContainerOne {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  margin-bottom: -312px;
+  bottom: 312px;
+  @include mobile {
+    bottom: 258px;
+  }
+  @include s20Ultra {
+    bottom: 240px;
+  }
+  @include iPhone14Pro {
+    bottom: 222px;
+    margin-bottom: -280px;
+  }
+}
+
+.containerOne {
+  height: 700px;
+  position: relative;
+  margin-bottom: -699px;
+  bottom: 700px;
+  background: linear-gradient(6deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+.largeImg {
+  height: 671px;
+}
+.defaultImg {
+  height: 100%;
+}
+
+.defaultContainerTwo {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  bottom: 290px;
+  margin-bottom: -260px;
+  @include mobile {
+    bottom: 220px;
+  }
+  @include s20Ultra {
+    bottom: 200px;
+    margin-bottom: -216px;
+  }
+  @include iPhone14Pro {
+    bottom: 200px;
+    margin-bottom: -224px;
+  }
+}
+
+.containerTwo {
+  position: relative;
+  bottom: 543px;
+  margin-bottom: -522px;
+  background: linear-gradient(6deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+.client_cards {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.glide {
+  margin-bottom: 32px;
+}
+
+.noOverFlow {
+  overflow: hidden;
+}
+
+.hero1imgOverlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  height: 769px;
+  width: 100%;
+  margin-top: -798px;
+  @include iPhone12Pro {
+    height: 646px !important;
+    margin-top: -678px !important;
+  }
+  @include iPhoneSe {
+    margin-top: -654px;
+    height: 624px;
+  }
+  @include s20Ultra {
+    height: 688px;
+    margin-top: -716px;
+  }
+  @include iPhone14Pro {
+    height: 716px;
+    margin-top: -744px;
+  }
+}
+
+.marginTopHero2 {
+  margin-top: 40px;
+}
+
+.marginTopHero3 {
+  margin-top: 40px;
+  @include mobile {
+    margin-top: 90px;
+  }
+}
+.showMoreContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//animation
+
+.slide_in {
+  animation: slide-in 0.5s forwards;
+}
+
+.slide_out {
+  animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(-1%);
+  }
+}
+
+.slide_in2 {
+  animation: slide-in2 0.5s forwards;
+}
+
+.slide_out2 {
+  animation: slide-out2 0.5s forwards;
+}
+
+@keyframes slide-in2 {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-out2 {
+  0% {
+    transform: translateY(-15%);
+  }
+  50% {
+    transform: translateY(-7%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.increaseHeight {
+  height: 620px;
+}
+.normalHeight {
+  height: 514px;
+}
+
+//

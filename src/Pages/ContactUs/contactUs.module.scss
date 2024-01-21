@@ -1,0 +1,297 @@
+@import "../../variable.module.scss";
+
+.contactUsContainer {
+  .contactUsHero {
+    background-image: url("../../Asset/Img/contactUs.png");
+    height: 890px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile {
+      height: 800px;
+    }
+    .backgroundShade {
+      height: 100%;
+      background: linear-gradient(
+        133deg,
+        #000 7.17%,
+        rgba(217, 217, 217, 0) 100%
+      );
+    }
+    .herotextContainer {
+      position: relative;
+      top: -80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: $whiteColor;
+      .heroMaintext {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 120%; /* 96px */
+        @include smallLaptop {
+          font-size: 72px;
+        }
+        @include mobile {
+          font-size: 28px;
+        }
+      }
+      .heroSubText {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 120%; /* 48px */
+        width: 567px;
+        height: 82px;
+        margin-top: 24px;
+        @include smallLaptop {
+          font-size: 32px;
+        }
+        @include mobile {
+          margin: 48px 24px 0 24px;
+          width: 75%;
+          font-size: 22px;
+        }
+      }
+      .actualSubText {
+        text-align: center;
+        font-size: 30px;
+        line-height: 120%; /* 36px */
+        width: 870px;
+        height: 193px;
+        flex-shrink: 0;
+        margin-top: 48px;
+        @include smallLaptop {
+          font-size: 26px;
+        }
+        @include mobile {
+          font-size: 18px;
+          width: 88%;
+          text-align: center;
+        }
+      }
+      .contactUsBtn {
+        padding: 8px 48px;
+        color: $whiteColor;
+        border-radius: 10px;
+        background: #397ce2;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 120%; /* 48px */
+        border: none;
+        cursor: pointer;
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+      .greyTextContainer {
+        margin-top: 128px;
+        width: 100%;
+        height: 88px;
+        background: $footerbackgroundColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 22px;
+        line-height: 120%; /* 26.4px */
+        @include mobile {
+          font-size: 14px;
+          margin-top: 159px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .outerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 864px;
+    flex-direction: column;
+    @include smallLaptop {
+      height: 841px;
+    }
+    @include mobile {
+      height: 678px;
+    }
+    .blackLine {
+      height: 2px;
+      width: 100%;
+      background-color: $blackColor;
+    }
+    .contactForm {
+      display: flex;
+      align-items: flex-start;
+      position: absolute;
+      z-index: 99;
+      background-color: $headerColor;
+      .formContainer {
+        padding: 32px 54px;
+        @include smallLaptop {
+          padding: 20px 54px;
+        }
+        @include mobile {
+          padding: 20px 24px;
+        }
+        .headingContainer {
+          display: flex;
+          justify-content: space-between;
+          .actualHeading {
+            width: 196px;
+            @include mobile {
+              width: 88px;
+            }
+            .heading {
+              text-align: center;
+              color: $footerbackgroundColor;
+              font-size: 48px;
+              font-weight: 700;
+              line-height: 120%; /* 57.6px */
+              @include mobile {
+                font-size: 24px;
+              }
+            }
+            .underline {
+              width: 100%;
+              height: 5px;
+              background: $learnMoreColor;
+            }
+          }
+        }
+        .form {
+          margin-top: 88px;
+          display: flex;
+          flex-direction: column;
+          @include mobile {
+            margin-top: 72px;
+          }
+          .contactInput {
+            width: 549px;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 19.2px */
+            border-bottom: 1px solid $inputBackgroundColor;
+            margin-bottom: 56px;
+            color: $blackColor;
+            @include smallLaptop {
+              margin-bottom: 40px;
+              width: 500px;
+            }
+            @include mobile {
+              width: 320px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          .inputContainer {
+            margin-bottom: 64px;
+            @include mobile {
+              margin-bottom: 20px;
+            }
+            .inputLabel {
+              color: $inputlabelColor;
+              font-family: Lato;
+              font-size: 16px;
+              font-style: normal;
+              line-height: 120%; /* 19.2px */
+              margin-bottom: 8px;
+            }
+            .textArea {
+              border: 1px solid $textAreaborder;
+            }
+          }
+          .submitBtn {
+            width: 250px;
+            height: 50.234px;
+            border-radius: 12px;
+            background: $learnMoreColor;
+            border: none;
+            color: $whiteColor;
+            font-size: 20px;
+            line-height: 120%; /* 24px */
+            cursor: pointer;
+            @include mobile {
+              width: 150px;
+            }
+          }
+          .btnImgContainer {
+            @include mobile {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+            .btnCityBuldg {
+              @include mobile {
+                position: relative;
+                margin-bottom: -24px;
+              }
+            }
+          }
+        }
+      }
+
+      .detailsContainer {
+        padding: 40px 72px 0 72px;
+        height: 100%;
+        background: $detailsContainerColor;
+        color: $whiteColor;
+        @include smallLaptop {
+          padding: 20px 56px 0 56px;
+        }
+        .iconLabelContainer {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 16px;
+          .detialsIcon {
+            margin-right: 32px;
+          }
+          .detialsLabel {
+            font-family: Roboto;
+            font-size: 20px;
+            line-height: 120%; /* 24px */
+          }
+        }
+        .detialsSubText {
+          margin-top: 48px;
+          width: 442px;
+          font-family: Roboto;
+          font-size: 16px;
+          line-height: 120%; /* 19.2px */
+        }
+        .socialMediaIconcontainer {
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          .mediaIcon {
+            cursor: pointer;
+          }
+        }
+        .cityBuldContainer {
+          margin-top: 120px;
+          .cityBuldg {
+            padding-left: 64px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.borderIcon {
+  padding: 9px;
+  border: 2px solid $whiteColor;
+  border-radius: 50%;
+  width: 26px;
+  height: 24px;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}

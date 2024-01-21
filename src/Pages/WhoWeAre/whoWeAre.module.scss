@@ -1,0 +1,703 @@
+@import "../../variable.module.scss";
+
+.box {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  border-bottom: 2px solid #0004ff;
+  background: #cccaca;
+}
+.borderLeft {
+  border-left: 2px solid #0004ff;
+  position: absolute;
+  top: 95%;
+  bottom: 0;
+}
+.borderRight {
+  position: absolute;
+  border-right: 2px solid #0004ff;
+  top: 0;
+}
+
+.whoWeAreContaineParent {
+  .heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .imgTextContainer {
+      .heroImg {
+        width: 100%;
+      }
+      .heroText {
+        width: 509px;
+        position: absolute;
+        margin-top: -15%;
+        color: $whiteColor;
+        font-size: 50px;
+        font-weight: 700;
+        border-bottom: 4px solid $borderColor2;
+        margin-left: 2%;
+      }
+    }
+
+    .verticalLine {
+      background: $lineColor;
+      width: 62px;
+      height: 2px;
+      transform: rotate(-90deg);
+      flex-shrink: 0;
+    }
+  }
+  .initialParent {
+    padding: 0 280px 0 280px;
+    .initialBorderContainerOne {
+      width: 110%;
+      margin-top: 200px;
+      height: 440px;
+      border-right: 2px solid $borderColor;
+      border-bottom: 2px solid $borderColor;
+      .rightTopBorder {
+        position: relative;
+        width: 12%;
+        height: 2px;
+        border-top: 2px solid $borderColor;
+        left: 88%;
+      }
+      .initialborderContainerHeadingOne {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        top: -32%;
+      }
+    }
+    .initialBorderContainerTwo {
+      width: 110%;
+      height: 540px;
+      border-left: 2px solid $borderColor;
+      border-bottom: 2px solid $borderColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 99;
+      .imgTextcontainer {
+        position: relative;
+        top: -40%;
+        background: linear-gradient(
+          180deg,
+          #000 13.54%,
+          rgba(137, 134, 134, 0) 100%
+        );
+        .initialOneImg {
+          width: 1019px;
+        }
+        .textContainer {
+          text-align: center;
+          position: relative;
+          top: -10%;
+          width: 982px;
+          margin-top: -16%;
+          .text {
+            color: $whiteColor;
+            text-align: center;
+            font-size: 21px;
+            line-height: 140%; /* 30.8px */
+          }
+        }
+      }
+    }
+    .initialBorderContainerThree {
+      width: 110%;
+      height: 256px;
+      border-right: 2px solid $borderColor;
+      .borderRightBottom {
+        position: relative;
+        background-color: $borderColor;
+        border-bottom: 1px solid $blackColor;
+        height: 1px;
+        width: 12%;
+        left: 88.1%;
+        top: 99.8%;
+        .headingContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .containerThreePosition {
+        position: relative;
+        margin-top: -9%;
+      }
+      .lineTextContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .verticalLine {
+          margin-bottom: 1.5%;
+          width: 2px;
+          height: 64px;
+          margin-top: 1%;
+          background-color: $lineColor;
+        }
+        .initialContainerThreeText {
+          width: 944px;
+        }
+      }
+    }
+    .initialBorderContainerFour {
+      width: 110%;
+      height: 540px;
+      border-left: 2px solid $borderColor;
+      z-index: 99;
+      .topLeftBorder {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 12%;
+        border-top: 2px solid $borderColor;
+      }
+      .bottomLeftBorder {
+        position: relative;
+        top: 99.3%;
+        left: 0;
+        width: 12%;
+        border-bottom: 2px solid $borderColor;
+      }
+      .initialBorderImgContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 45%;
+        .heroImg {
+          background: linear-gradient(
+            180deg,
+            #000 13.54%,
+            rgba(137, 134, 134, 0) 100%
+          );
+          width: 1019px;
+        }
+        .textContainer {
+          text-align: center;
+          position: relative;
+          top: -10%;
+          width: 982px;
+          margin-top: -16%;
+          .text {
+            color: $whiteColor;
+            text-align: center;
+            font-size: 21px;
+            line-height: 140%; /* 30.8px */
+          }
+        }
+      }
+    }
+  }
+  .whoWeAreContaine {
+    margin-top: 16%;
+    padding: 106px 280px 0 280px;
+    .headingContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .heading {
+        color: $blackColor;
+        font-family: Roboto;
+        font-size: 80px;
+        font-weight: 700;
+      }
+    }
+    .headingContainerText {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 124px;
+
+      .borderContainer {
+        width: 110%;
+        height: 400px;
+        border-bottom: 2px solid $borderColor;
+        border-right: 2px solid $borderColor;
+        position: relative;
+        top: -114px;
+        margin-bottom: -114px;
+        .topBorder {
+          position: absolute;
+          border-right: 2px solid $blackColor;
+          height: 2px;
+          width: 12%;
+          right: 0;
+          background-color: $borderColor;
+        }
+        .protfolioContainer {
+          position: relative;
+          top: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .protfolioImg {
+            width: 999px;
+          }
+        }
+      }
+      .borderContainerTwo {
+        width: 110%;
+        height: 440px;
+        border-left: 2px solid $borderColor;
+        .bottomBorder {
+          position: relative;
+          background-color: $borderColor;
+          border-bottom: 1px solid #000;
+          height: 1px;
+          width: 12%;
+          left: 0;
+          top: 99.8%;
+          .headingContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .borderContainerThree {
+        width: 110%;
+        height: 400px;
+        border-right: 2px solid $borderColor;
+        .rightTopBorder {
+          position: relative;
+          background-color: $borderColor;
+          border-bottom: 1px solid #000;
+          height: 1px;
+          width: 12%;
+          left: 88%;
+          top: 0%;
+        }
+        .containerThreeHeadingOne {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          top: -14%;
+        }
+      }
+      .borderContainerFour {
+        width: 110%;
+        height: 400px;
+        border-left: 2px solid $borderColor;
+        .headingFourContainer {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          top: -10%;
+          .mainHeadingFour {
+            color: $blackColor;
+            text-align: center;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 120%; /* 43.2px */
+            width: 958px;
+            height: 97px;
+          }
+          .headingFour {
+            margin-top: 88px;
+            width: 1003px;
+            height: 222px;
+            flex-shrink: 0;
+            color: $blackColor;
+            text-align: center;
+            font-size: 28px;
+            line-height: 120%; /* 33.6px */
+          }
+        }
+        .topLeftBorder {
+          border-top: 2px solid $borderColor;
+          position: relative;
+          height: 1px;
+          width: 12%;
+          top: 0;
+          left: 0;
+        }
+      }
+      .borderContainerFive {
+        margin-top: 304px;
+        width: 110%;
+        height: 400px;
+        border-right: 2px solid $blackColor;
+        .borderRigthTop {
+          border-top: 2px solid $borderColor;
+          position: relative;
+          left: 92%;
+          top: 0;
+          width: 8%;
+          height: 1px;
+        }
+        .imgContainer {
+          position: relative;
+          display: flex;
+          align-items: center;
+          align-items: center;
+          justify-content: center;
+          height: 640px;
+          top: -82%;
+          .singleImgParentContainer {
+            width: 540px;
+            height: 504px;
+            margin-right: 32px;
+            .singleImg {
+              height: 100%;
+              width: 100%;
+              border-radius: 10px;
+            }
+          }
+          .twoImageContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .multiImg {
+              width: 540px;
+              height: 240px;
+              border-radius: 10px;
+              &:first-child {
+                margin-bottom: 32px;
+              }
+              //   box-shadow: 1px 15px 33px 0px rgba(0, 0, 0, 0.14),
+              //     5px 60px 60px 0px rgba(0, 0, 0, 0.12),
+              //     12px 134px 81px 0px rgba(0, 0, 0, 0.07),
+              //     21px 238px 96px 0px rgba(0, 0, 0, 0.02),
+              //     33px 372px 105px 0px rgba(0, 0, 0, 0);
+            }
+          }
+        }
+      }
+
+      .borderContainerSix {
+        width: 110%;
+        height: 400px;
+        border-left: 2px solid $blackColor;
+        .borderLeftTop {
+          border-top: 2px solid $borderColor;
+          position: relative;
+          left: 0;
+          top: 0;
+          width: 12%;
+          height: 2px;
+        }
+        .borderContainerFiveHeading {
+          position: relative;
+          top: -20%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .meetOurLeaderContainer {
+    margin-top: 80px;
+    .leaderList {
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $leaderBackgroundColor;
+      .meetLeaderLabelContainer {
+        margin-left: 64px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .border {
+          width: 248px;
+          height: 5px;
+          background: $whiteColor;
+          &:first-child {
+            margin-bottom: 32px;
+          }
+          &:last-child {
+            margin-top: 32px;
+          }
+        }
+        .meetLeaderLabel {
+          color: $whiteColor;
+          font-family: Roboto;
+          font-size: 52px;
+          font-style: italic;
+          font-weight: 600;
+          line-height: 120%; /* 62.4px */
+          letter-spacing: 1.3px;
+        }
+      }
+      .imgContainer {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .listItem {
+          width: 350px;
+          position: relative;
+          &:first-child {
+            left: 10%;
+          }
+          &:nth-child(2) {
+            left: 5%;
+          }
+          .leaderImg {
+            width: 376px;
+          }
+        }
+      }
+    }
+    .leaderContainer {
+      width: 100%;
+      height: 1092px;
+      .outerImage {
+        width: 100%;
+        height: 1092px;
+        background-image: url("../../Asset/Img/meetLeader1.png");
+        background-repeat: no-repeat;
+        .outerImageOverlay {
+          height: 100%;
+          width: 100%;
+          background: rgba(43, 46, 53, 0.8);
+        }
+      }
+      .innerMiddelImgContainer {
+        position: relative;
+        bottom: 90%;
+        left: 10%;
+        width: 1432px;
+        height: 872px;
+        background-image: url("../../Asset/Img/meetLeader2.png");
+        background-repeat: no-repeat;
+        .innerMiddleImageOverlay {
+          height: 100%;
+          width: 99.4%;
+          background: rgba(43, 46, 53, 0.8);
+        }
+      }
+      .innerMostImgContainer {
+        position: relative;
+        width: 1069.91px;
+        height: 717.117px;
+        bottom: 163%;
+        left: 20%;
+        background-image: url("../../Asset/Img/meetLeader3.png");
+        background-repeat: no-repeat;
+
+        .containerDetials {
+          position: relative;
+          z-index: 99;
+          padding: 32px 48px;
+          .containerHeaing {
+            color: $whiteColor;
+            font-family: Lato;
+            font-size: 40px;
+            line-height: 120%; /* 48px */
+          }
+          .imgTextContainer {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            .detailsContainer {
+              display: flex;
+              justify-content: flex-end;
+              flex-direction: column;
+              color: $whiteColor;
+              .upperUnderlinedBorderParent {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                width: 100%;
+                .upperUnderlinedBorder {
+                  width: 264px;
+                  height: 6px;
+                  background: $borderColor2;
+                }
+              }
+              .leaderNameLabel {
+                text-align: right;
+                font-family: Lato;
+                font-size: 60px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 120%; /* 72px */
+              }
+              .designationLabel {
+                margin-top: 24px;
+                color: $whiteColor;
+                text-align: right;
+                font-family: Lato;
+                font-size: 26px;
+                line-height: 120%; /* 31.2px */
+                margin-bottom: 24px;
+              }
+              .subText {
+                max-width: 449px;
+                margin-bottom: 16px;
+                color: $whiteColor;
+                text-align: right;
+                font-family: Lato;
+                font-size: 18px;
+                line-height: 130%; /* 26px */
+                margin-top: 0;
+                &:last-child {
+                  margin-bottom: 0;
+                }
+                &:nth-child(1) {
+                  margin-top: 32px;
+                }
+              }
+              .iconSignatureContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 48px;
+                .ogSignatureContainer {
+                  display: flex;
+                  align-items: center;
+                  justify-content: left;
+                }
+              }
+              .btnContainer {
+                position: absolute;
+                margin-left: 456px;
+                .arrowContainer {
+                }
+              }
+            }
+          }
+        }
+
+        .innerMostImageOverlay {
+          position: relative;
+          height: 101%;
+          width: 100%;
+          background: rgba(36, 36, 44, 0.88);
+          top: -109%;
+        }
+      }
+      .leaderInnerContainerParent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        .leaderInnerContainer {
+          position: relative;
+          width: 1432px;
+          height: 872px;
+          background-image: url("../../Asset/Img/meetLeader2.png");
+          background-repeat: no-repeat;
+          .leaderImgTextContainerParent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .leaderImgTextContainer {
+              position: relative;
+              width: 1069px;
+              height: 717px;
+              background-image: url("../../Asset/Img/meetLeader3.png");
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.leaderContainerBackgroundBlack {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(43, 46, 53, 0.8);
+}
+.verticalDevider {
+  margin-top: 40px;
+  height: 80px;
+  width: 3px;
+  background-color: $borderColor;
+}
+.marginTop {
+  margin-top: 40px;
+}
+
+.containerTwoHeadingWidth {
+  width: 896px;
+}
+.containerOneHeadingWidth {
+  width: 920px;
+}
+
+.headingFiveWidth {
+  width: 942px;
+}
+
+.heading {
+  text-align: center;
+  font-family: Lato;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 33.6px */
+  color: $blackColor;
+}
+
+.boldText {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.vissionContainer {
+  position: relative;
+  margin-top: -3.5%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 495px;
+  height: 108px;
+  background: $whiteColor;
+  border-radius: 13px;
+  .rectBox {
+    flex-shrink: 0;
+    color: $blackColor;
+    font-size: 46px;
+    font-weight: 700;
+  }
+}
+.withBorderLTR {
+  border-radius: 13px 13px 0 0 !important;
+  border-left: 2px solid $borderColor;
+  border-top: 2px solid $borderColor;
+  border-right: 2px solid $borderColor;
+}
+
+.icon {
+  cursor: pointer;
+}
+.signatureContainerLeader2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mr_2 {
+  margin-left: 8px;
+}

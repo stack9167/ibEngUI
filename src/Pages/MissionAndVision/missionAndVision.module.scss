@@ -1,0 +1,474 @@
+@import "../../variable.module.scss";
+
+.whoWeAreContaineParent {
+  .heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .imgTextContainer {
+      width: 100%;
+      //   height: 560px;
+      .heroImgOverLay {
+        position: relative;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        height: 400px;
+        margin-bottom: -217px;
+        bottom: 398px;
+        @include mobile {
+          height: 210px;
+          margin-bottom: -400px;
+        }
+        @include iPhoneSe {
+          height: 209px;
+          margin-top: -57%;
+        }
+        @include iPhone14Pro {
+          margin-top: 43% !important;
+        }
+        @include s20Ultra {
+          margin-top: -51%;
+        }
+      }
+      .heroImg {
+        width: 100%;
+        @include mobile {
+          height: 210px;
+        }
+        @include iPhoneSe {
+        }
+      }
+      .blackHighlight {
+        height: 560px;
+        position: relative;
+        background: linear-gradient(
+          180deg,
+          #000 12.54%,
+          rgba(137, 134, 134, 0) 99.96%
+        );
+      }
+      .heroText {
+        width: 509px;
+        position: absolute;
+        margin-top: -24%;
+        color: $whiteColor;
+        font-size: 50px;
+        font-weight: 700;
+        border-bottom: 4px solid $borderColor2;
+        margin-left: 2%;
+        @include mobile {
+          font-size: 20px;
+          width: 215px;
+          margin-top: -28%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          border-bottom: none;
+        }
+        .borderUnderLine {
+          @include mobile {
+            border-bottom: 4px solid $borderColor2;
+          }
+        }
+      }
+    }
+
+    .verticalLine {
+      background: $lineColor;
+      height: 62px;
+      width: 2px;
+      //   transform: rotate(-90deg);
+      flex-shrink: 0;
+      @include mobile {
+        height: 27px;
+      }
+    }
+  }
+  .initialParent {
+    padding: 0 240px;
+    @include smallLaptop {
+      padding: 0 180px;
+    }
+    @include mobile {
+      padding: 0;
+    }
+    .initialBorderContainerOne {
+      width: 110%;
+      margin-top: 200px;
+      height: 440px;
+      border-right: 2px solid $borderColor;
+      border-bottom: 2px solid $borderColor;
+      @include mobile {
+        width: 100%;
+        margin-top: 120px;
+        height: 360px;
+        border-bottom: none;
+        border-right: none;
+      }
+      .rightTopBorder {
+        position: relative;
+        width: 12%;
+        height: 2px;
+        border-top: 2px solid $borderColor;
+        left: 88%;
+        @include mobile {
+          display: none;
+        }
+      }
+      .initialborderContainerHeadingOne {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        top: -32%;
+        @include smallLaptop {
+          top: -26%;
+        }
+      }
+    }
+    .initialBorderContainerTwo {
+      width: 110%;
+      height: 540px;
+      border-left: 2px solid $borderColor;
+      border-bottom: 2px solid $borderColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 99;
+      @include mobile {
+        width: 100%;
+        height: 336px;
+        border-bottom: none;
+        border-left: none;
+      }
+      .imgTextcontainer {
+        position: relative;
+        top: -40%;
+        @include mobile {
+          top: -15%;
+        }
+        .mobileBlackHighlight {
+          @include mobile {
+            color: $whiteColor;
+            width: 100% !important;
+            height: 365px;
+            background: rgba(0, 0, 0, 0.55);
+            text-align: center;
+            position: relative;
+            top: -32%;
+            margin-top: -50%;
+          }
+          @include iPhoneSe {
+            top: -33%;
+          }
+          @include iPhone14Pro {
+            top: -30%;
+          }
+          @include s20Ultra {
+            margin-top: -49%;
+          }
+          .mobileText {
+            padding: 40px 24px;
+            font-family: Lato;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 22.4px */
+          }
+        }
+        .blackHighlight {
+          height: 160px;
+          background: linear-gradient(
+            0deg,
+            #000 13.54%,
+            rgba(137, 134, 134, 0) 100%
+          );
+          position: relative;
+          top: 0%;
+          @include mobile {
+            top: -28%;
+          }
+          .textContainer {
+            position: relative;
+            top: -10%;
+            width: 940px;
+            margin-top: -16%;
+            padding: 0 40px;
+            @include mobile {
+              width: 100%;
+              padding: 0;
+              top: -40%;
+            }
+            .text {
+              color: $whiteColor;
+              text-align: center;
+              font-size: 21px;
+              line-height: 140%; /* 30.8px */
+              @include mobile {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .initialOneImg {
+          width: 1019px;
+          @include mobile {
+            width: 100%;
+            height: 366px;
+          }
+        }
+      }
+    }
+    .initialBorderContainerThree {
+      width: 110%;
+      height: 256px;
+      border-right: 2px solid $borderColor;
+      @include mobile {
+        width: 100%;
+        border-right: none;
+      }
+      .borderRightBottom {
+        position: relative;
+        background-color: $borderColor;
+        border-bottom: 1px solid $blackColor;
+        height: 1px;
+        width: 9%;
+        left: 91.1%;
+        top: 99.8%;
+        @include mobile {
+          display: none;
+        }
+        .headingContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .containerThreePosition {
+        position: relative;
+        margin-top: -9.7%;
+        @include smallLaptop {
+          margin-top: -10.3%;
+        }
+        @include mobile {
+          margin-top: 1%;
+        }
+      }
+      .lineTextContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .verticalLine {
+          margin-bottom: 1.5%;
+          width: 2px;
+          height: 64px;
+          margin-top: 1%;
+          background-color: $lineColor;
+          @include mobile {
+            height: 27px;
+          }
+          @include iPhone14Pro {
+            padding: 110px 8px 0 8px;
+            margin-top: -160%;
+          }
+          @include s20Ultra {
+            padding: 54px 8px 0 8px;
+            margin-top: -167%;
+          }
+          @include iPhoneSe {
+            margin-top: -184%;
+          }
+        }
+        .initialContainerThreeText {
+          width: 933px;
+          @include mobile {
+            width: 280px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .initialBorderContainerFour {
+      width: 110%;
+      height: 540px;
+      border-left: 2px solid $borderColor;
+      z-index: 99;
+      margin-bottom: 400px;
+      @include mobile {
+        width: 100%;
+        border-left: none;
+        margin-bottom: 80px;
+      }
+      .topLeftBorder {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 9%;
+        border-top: 2px solid $borderColor;
+        @include mobile {
+          display: none;
+        }
+      }
+      .bottomLeftBorder {
+        position: relative;
+        top: 99.3%;
+        left: 0;
+        width: 12%;
+        border-bottom: 2px solid $borderColor;
+        @include mobile {
+          display: none;
+        }
+      }
+      .initialBorderImgContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 45%;
+        @include mobile {
+          top: 32%;
+        }
+        .heroImg {
+          width: 1019px;
+          @include mobile {
+            width: 100%;
+            height: 366px;
+          }
+        }
+        .mobileHighlight {
+          position: relative;
+          background: rgba(0, 0, 0, 0.7);
+          width: 100%;
+          height: 366px;
+          color: $whiteColor;
+          margin-top: -94%;
+          @include iPhoneSe {
+            height: 373px;
+            margin-top: -99%;
+          }
+          @include iPhone14Pro {
+            margin-top: -85%;
+          }
+          @include s20Ultra {
+            margin-top: -89%;
+          }
+          .mobileText {
+            padding: 40px 24px;
+            font-size: 17px;
+            text-align: center;
+            line-height: 150%; /* 22.4px */
+          }
+        }
+        .blackHighlight {
+          height: 200px;
+          background: linear-gradient(
+            0deg,
+            #000 13.54%,
+            rgba(137, 134, 134, 0) 100%
+          );
+          position: relative;
+          margin-top: -17.3%;
+          .textContainer {
+            text-align: center;
+            width: 940px;
+            padding: 0 40px;
+            @include mobile {
+              padding: 0;
+              width: 100%;
+            }
+            .text {
+              color: $whiteColor;
+              text-align: center;
+              font-size: 21px;
+              line-height: 140%; /* 30.8px */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vissionContainer {
+  position: relative;
+  margin-top: -15.5%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 495px;
+  height: 108px;
+  background: $whiteColor;
+  border-radius: 13px;
+  @include mobile {
+    height: 64px;
+    width: 264px;
+    margin-top: 1%;
+  }
+  .rectBox {
+    flex-shrink: 0;
+    color: $blackColor;
+    font-size: 46px;
+    font-weight: 700;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
+
+.heading {
+  text-align: center;
+  font-family: Lato;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 33.6px */
+  color: $blackColor;
+  @include smallLaptop {
+    font-size: 24px;
+  }
+}
+
+.boldText {
+  font-style: italic !important;
+  font-weight: 700;
+}
+
+.containerTwoHeadingWidth {
+  width: 1048px;
+  @include mobile {
+    width: 296px;
+    font-size: 16px;
+  }
+}
+.containerOneHeadingWidth {
+  width: 920px;
+}
+
+.marginTop {
+  margin-top: 40px;
+}
+.withBorderLTR {
+  border-radius: 13px 13px 0 0 !important;
+  border-left: 2px solid $borderColor;
+  border-top: 2px solid $borderColor;
+  border-right: 2px solid $borderColor;
+  @include mobile {
+    border: none;
+  }
+}
+
+.smallLaptopMargin {
+  @include smallLaptop {
+    margin-top: 24px;
+  }
+}
+
+.textCenter {
+  text-align: center;
+}

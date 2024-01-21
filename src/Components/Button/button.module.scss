@@ -1,0 +1,23 @@
+@import "../../variable.module.scss";
+
+.btn {
+  cursor: pointer;
+}
+
+.loading {
+  width: 28px;
+  height: 28px;
+  border: 6px solid #e4e8ef;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: loader-rotate 1s linear infinite;
+}
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
